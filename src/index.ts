@@ -4,9 +4,11 @@ import { makeExecutableSchema } from '@graphql-tools/schema';
 import { loadFiles } from '@graphql-tools/load-files';
 import { addMocksToSchema } from '@graphql-tools/mock';
 
-console.log('Starting Mock Server...', process.cwd());
+const schemaLocationPattern = `${process.cwd()}/**/*.graphql`;
 
-const typeDefs = await loadFiles(`${process.cwd()}/**/*.graphql`);
+console.log('Starting Mock Server...\n\t looking form scehma(s) in: ', schemaLocationPattern);
+
+const typeDefs = await loadFiles(schemaLocationPattern);
 
 function mockId(): string {
   return Math.floor(Math.random() * 100000).toString();
