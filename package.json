@@ -1,5 +1,5 @@
 {
-  "name": "graphql-mock-serverr",
+  "name": "graphql-mock-server",
   "version": "1.0.0",
   "description": "GraphQL Mock server",
   "main": "dist/index.js",
