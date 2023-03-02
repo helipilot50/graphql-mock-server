@@ -1,5 +1,5 @@
 {
-  "name": "graphql-mock-serverr",
+  "name": "graphql-mock-server",
   "version": "1.0.0",
   "description": "GraphQL Mock server",
   "main": "dist/index.js",
@@ -11,7 +11,7 @@
     "start": "node dist/index.js"
   },
   "author": "Peter Milne",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@apollo/server": "^4.4.0",
     "@graphql-tools/load-files": "^6.6.1",
