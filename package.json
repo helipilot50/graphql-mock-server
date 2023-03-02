@@ -1,0 +1,28 @@
+{
+  "name": "graphql-mock-serverr",
+  "version": "1.0.0",
+  "description": "GraphQL Mock server",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --project .",
+    "dev": "node --experimental-specifier-resolution=node --loader ts-node/esm src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "author": "Peter Milne",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.4.0",
+    "@graphql-tools/load-files": "^6.6.1",
+    "@graphql-tools/mock": "^8.7.18",
+    "@graphql-tools/schema": "^9.0.16",
+    "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.14.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}
